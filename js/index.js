@@ -39,4 +39,61 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+const link= document.querySelectorAll('a');
+console.log(link);
+link[0].textContent= "Services";
+link[1].textContent= "Product";
+link[2].textContent="Visions";
+link[3].textContent="Features";
+link[4].textContent="About";
+link[5].textContent="Contact";
+// link.style.color="green"; For some reason this won't work?
+link[0].style.color= "green";
+link[1].style.color= "green";
+link[2].style.color="green";
+link[3].style.color="green";
+link[4].style.color="green";
+link[5].style.color="green";
+let codeSnippet= document.querySelector("#cta-img");
+codeSnippet.src= "img/header-img.png";
+const newNav= document.createElement("a");
+const newNav2= document.createElement("a");
+newNav.textContent="Blog";
+newNav2.textContent="Factory";
+newNav.style.color="green";
+newNav2.style.color="green";
+const nav= document.querySelector('nav');
+nav.appendChild(newNav);
+nav.prepend(newNav2);
+let awesomeDom= document.querySelector('.cta-text h1');
+awesomeDom.textContent="Dom Is Awesome";
+
+const buttonText=document.querySelector('.cta-text button');
+buttonText.textContent="Get Started";
+
+const features= document.querySelector('.text-content h4');
+features.textContent="Features";
+const featuresText=document.querySelector('.text-content p');
+featuresText.textContent="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+let paragraphHeadlines= document.querySelectorAll("h4");
+console.log(paragraphHeadlines);
+let paragraphs = document.querySelectorAll("p");
+
+paragraphs[1].textContent="Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+paragraphHeadlines[1].textContent="About";
+
+paragraphs[2].textContent="Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+const midPageImg= document.querySelector("#middle-img");
+midPageImg.src="img/mid-page-accent.jpg";
+paragraphHeadlines[2].textContent="Services";
+paragraphs[3].textContent="Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphHeadlines[3].textContent="Products";
+paragraphs[4].textContent="Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+paragraphHeadlines[4].textContent="Vision";
+paragraphHeadlines[5].textContent="Contact"
+paragraphs[5].textContent="123 Way 456 Street Somewhere, USA";
+paragraphs[6].textContent="1 (888) 888-8888";
+paragraphs[7].textContent="Copyright Great Idea! 2018";
