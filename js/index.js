@@ -40,7 +40,10 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
-
+const button=document.querySelector('button');
+button.addEventListener('click', () => {
+  alert('Button Was Clicked!');
+});
 const link= document.querySelectorAll('a');
 console.log(link);
 link[0].textContent= "Services";
